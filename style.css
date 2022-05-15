@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.patternbg {
+    position: absolute;
+    width: 35rem;
+    float: right;
+    right: 68px;
+    top: 0vw;
+    bottom: 0;
+    z-index: -1;
+}
+
+body::after {
+    content: " ";
+    background-image: url(./images/pattern-curve.svg);
+    position: absolute;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 22%;
+    background-size: contain;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.slides {
+    display: inline-flex;
+    overflow: hidden;
+    gap: 23rem;
+
+    padding: 53px 0px 1px 8rem;
+    max-width: 82rem;
+    position: relative;
+}
+
+.slide {
+    transition-duration: 0.7s;
+    transition-timing-function: linear;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0px;
+}
+
+.text {
+    width: 35rem;
+    position: relative;
+    font-size: 30px;
+    right: -56px;
+}
+
+.tanyatext {
+    color: hsl(240deg 38% 20% / 89%);
+    font-size: 28px;
+    line-height: 38px;
+    font-family: system-ui;
+}
+
+address {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+h6 {
+    color: hsl(240, 38%, 20%);
+    font-style: normal;
+}
+
+p {
+    color: hsl(240, 18%, 77%);
+    font-style: normal;
+    font-size: 15px;
+}
+
+.tanya {
+    height: 28rem;
+    border-radius: 9px;
+    box-shadow: 1px 3px 4px #939191;
+}
+
+.johntext {
+    color: hsl(240deg 38% 20% / 89%);
+    font-size: 28px;
+    line-height: 38px;
+    font-family: system-ui;
+}
+
+.john {
+    height: 28rem;
+    border-radius: 9px;
+    box-shadow: 1px 3px 4px #939191;
+}
+
+.btn {
+    height: fit-content;
+    width: fit-content;
+    background-color: white;
+    position: absolute;
+    padding: 13px 17px 13px 17px;
+    box-shadow: 0 0px 2px 0px;
+    display: flex;
+    gap: 28px;
+    border-radius: 26px;
+    bottom: -6px;
+    right: 408px;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.previous {}
